@@ -24,6 +24,7 @@
         "output": {
             "doctype": "<!DOCTYPE html>",
             "page_title": "Login page",
+
             "favicon": "favicon.ico",
             "main_content": "<h1>Headers keep HTML validators happy</h1>"
         }
@@ -41,6 +42,7 @@
                     <section id="region-main" class="col-12 h-100" aria-label="{{#str}}content{{/str}}">
                     <div class="login-wrapper">
                         <div class="login-container">
+                        <div id="img_login"><img src="https://t-matsuoka.com/wp-content/uploads/2022/07/cropped-cropped-logo-no-slogan-13-13.png"></div>
                         {{{ output.main_content }}}
                         </div>
                     </div>
@@ -52,8 +54,9 @@
     {{> theme_academi/footer }}
 {{#js}}
 M.util.js_pending('theme_boost/loader');
+
+
 require(['theme_boost/loader'], function() {
   M.util.js_complete('theme_boost/loader');
 });
 {{/js}}
-
